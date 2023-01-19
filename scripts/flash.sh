@@ -19,4 +19,4 @@ esac
 
 export ESP_ARCH=xtensa-esp32-espidf
 
-web-flash --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/esp32-blinky
+web-flash --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/esp32_blinky

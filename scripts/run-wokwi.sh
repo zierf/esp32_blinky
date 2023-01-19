@@ -26,11 +26,13 @@ elif [ "${CODESPACE_NAME}" != "" ];then
 fi
 
 export ESP_ARCH=xtensa-esp32-espidf
+export PACKAGE_NAME=esp32_blinky
 
-# TODO: Update with your Wokwi Project
-export WOKWI_PROJECT_ID=""
+# ESP32 Blinky LED Wokwi Project
+export WOKWI_PROJECT_ID="354294739842051073"
+
 if [ "${WOKWI_PROJECT_ID}" == "" ]; then
-    wokwi-server --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/esp32-blinky
+    wokwi-server --chip esp32 target/${ESP_ARCH}/${BUILD_MODE}/${PACKAGE_NAME}
 else
-    wokwi-server --chip esp32 --id ${WOKWI_PROJECT_ID} target/${ESP_ARCH}/${BUILD_MODE}/esp32-blinky
+    wokwi-server --chip esp32 --id ${WOKWI_PROJECT_ID} target/${ESP_ARCH}/${BUILD_MODE}/${PACKAGE_NAME}
 fi

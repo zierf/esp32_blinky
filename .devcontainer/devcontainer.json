@@ -7,7 +7,7 @@
     "args": {
       "CONTAINER_USER": "esp",
       "CONTAINER_GROUP": "esp",
-      "ESP_IDF_VERSION":"release/v4.4",
+      "ESP_IDF_VERSION": "release/v4.4",
       "ESP_BOARD": "esp32"
     }
   },
@@ -33,7 +33,8 @@
     "mutantdino.resourcemonitor",
     "yzhang.markdown-all-in-one",
     "webfreak.debug",
-    "actboy168.tasks"
+    "actboy168.tasks",
+    "Wokwi.wokwi-vscode"
   ],
   "forwardPorts": [
     9012,
